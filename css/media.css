@@ -1,20 +1,43 @@
-/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */
-/*less than 640*/
-@media screen and (max-width: 640px) {
+/*greater than 1400 */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  #NavBar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #NavBar .sections ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-/*sm*/
-/*reater than 640 */
-@media screen and (min-width: 640px) {
+
+/*less the 1400*/
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
 }
-/* md */
-/*greater than 768*/
-@media screen and (min-width: 768px) {
+
+/*less than 1200*/
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
 }
-/* lg */
-/*greater the 1024*/
-@media screen and (min-width: 1024px) {
+/*less than 992*/
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
 }
-/* xl */
-/*greater than 1280 */
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  /* NavBar */
+}
+@media screen and (max-width: 576px) {
 }

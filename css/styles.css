@@ -1,0 +1,179 @@
+:root {
+  /* ? ######## Colors */
+  --color-default: #212529;
+  --dot-color: #ce1212 --primary-hue: 0;
+  --primary-saturation: 84%;
+  --primary-lightness: 44%;
+  --color-primary: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
+
+  --color-secondary: #37373f;
+  --color-tertiary: #7f7f90;
+
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 100%;
+  --color-light: hsl(
+    var(--light-hue),
+    var(--light-saturation),
+    var(--light-lightness)
+  );
+  --color-light-grey: #eee;
+
+  /* ! ######## Fonts */
+  --font-default:
+    "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+
+  /* * ######## Animation options */
+  --animation-duration: 400ms;
+}
+* *::after *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: #dd5959;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+}
+/* ============> Container */
+.container {
+  --padding: 40px 5px;
+  --margin-top: 0;
+  --margin-bottom: 0;
+  width: 100%;
+  padding: var(--padding);
+  margin-top: var(--margin-top);
+  margin-bottom: var(--margin-bottom);
+  margin: auto;
+  background-color: red;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a,
+span {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+}
+.btn {
+  --background-color: transparent;
+  --color: var(--color-light);
+  --padding: 5px 12px;
+  --border-width: 2px;
+  --border-color: transparent;
+  --border-radius: 0px;
+  --hover-bg-color: transparent;
+  --hover-color: transparent;
+  --font-size: 16px;
+
+  padding: var(--padding);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  color: var(--color);
+  font-size: var(--font-size);
+  cursor: pointer;
+  transition:
+    background-color var(--animation-duration),
+    color var(--animation-duration);
+}
+.btn:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--hover-color);
+}
+/*===============>  NabBar */
+#NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+}
+
+/* content */
+#NavBar .content {
+  text-align: center;
+}
+#NavBar .content span {
+  color: var(--dot-color);
+}
+
+/* left */
+#NavBar .left {
+  margin-bottom: 10px;
+}
+#NavBar .left h1 {
+  margin: 0;
+  color: #212529;
+}
+#NavBar .left h1:focus {
+  color: transparent;
+}
+
+/* sections */
+#NavBar .sections {
+  margin-bottom: 10px;
+}
+#NavBar .sections ul {
+  margin-top: 10px;
+  padding-left: 0;
+}
+#NavBar .sections li {
+  padding: 0 15px;
+  text-decoration: none;
+}
+#NavBar .sections li a {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #7f7f90;
+  padding-bottom: 5px;
+  position: relative;
+}
+#NavBar .sections ul li a::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #09c;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: width 0.5s;
+}
+#NavBar .sections ul li a:hover::before {
+  width: 100%;
+}
+
+/* right */
+#NavBar .right {
+  margin-left: 10px;
+}
+#NavBar .right i {
+  font-size: 25px;
+  color: #212529;
+}
+#NavBar .right i:hover {
+  cursor: pointer;
+}
