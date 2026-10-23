@@ -9,6 +9,7 @@
   --color-secondary: #fff;
   --color-tertiary: #9f9f9f;
   --color-light-grey: #252525;
+  --chef-section-color: #202020;
 }
 
 body:has(.home:target):has(.right input:checked) .home-link::before,
@@ -27,4 +28,7 @@ body:has(.right input:checked) #navbar .right .light {
 }
 body:has(.right input:checked) #navbar .right .dark {
   display: none;
+}
+#chefs {
+  /* background-color: #202020; */
 }

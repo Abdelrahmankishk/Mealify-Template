@@ -10,7 +10,7 @@
     var(--primary-saturation),
     var(--primary-lightness)
   );
-
+  --chef-section-color: #ffffff;
   --color-secondary: #37373f;
   --color-tertiary: #7f7f90;
 
@@ -271,7 +271,7 @@ body:has(.contact:target) .contact-link::before {
   padding: 0;
   margin: 1.25rem 0;
   font-family: var(--font-default);
-  color: #4f4f5a;
+  color: var(--color-tertiary);
   line-height: 1.6rem;
 }
 #home .content .left .buttons {
@@ -358,4 +358,134 @@ body:has(.contact:target) .contact-link::before {
   100% {
     transform: translate(0.0625rem, -0.125rem) rotate(-1deg);
   }
+}
+
+/*===============>  Chefs */
+
+#chefs {
+  background-color: var(--chef-section-color);
+}
+#chefs .container {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  text-align: center;
+}
+
+#chefs .text span {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-family: var(--font-secondary);
+  color: var(--color-tertiary);
+}
+#chefs .text h1 {
+  font-size: 3.125rem;
+  line-height: 3.9375rem;
+  font-weight: 400;
+  color: var(--color-tertiary);
+  font-family: var(--font-primary);
+}
+#chefs .text .head-color {
+  color: var(--color-primary);
+  font-size: 3.125rem;
+  line-height: 3.9375rem;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+#chefs .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  --gap: 1.875rem;
+  gap: var(--gap);
+}
+#chefs .box {
+  background-color: var(--color-light);
+  margin: 1.875rem 0;
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  transition: transform var(--animation-duration);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+#chefs .box:hover {
+  transform: scale(1.07);
+}
+#chefs .box .inner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+#chefs .box .image {
+  border-radius: 10px;
+  position: relative;
+}
+#chefs .box .image::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-image: url(../img/team-shape.svg);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 3.75rem;
+}
+#chefs .box .image img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#chefs .box .image .overlay {
+  background-color: #ffffff4d;
+  padding: 0.625rem;
+  margin-right: 5px;
+  border-radius: 0.5rem;
+  position: absolute;
+  width: fit-content;
+  top: 1.875rem;
+  right: -3.625rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: right var(--animation-duration) var(--animation-duration);
+}
+#chefs .inner:hover .overlay {
+  right: 0.625rem;
+}
+
+#chefs .box .image .overlay a {
+  margin-right: 5px;
+  /*  */
+}
+
+#chefs .box .image .overlay i {
+  font-size: 1.125rem;
+  padding: 0.625rem 0.3125rem;
+  color: #37373f66;
+  transition: color var(--animation-duration);
+}
+#chefs .overlay a:hover i {
+  color: #48484e !important;
+}
+#chefs .box .box-text {
+  padding: 1.5625rem;
+  padding-top: 0.625rem;
+}
+#chefs .box .box-text h3 {
+  font-size: 1.17rem;
+  color: var(--color-secondary) !important;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+#chefs .box .box-text span {
+  color: var(--color-tertiary);
+  font-size: 0.875rem;
+  font-family: var(--font-default);
+  font-weight: 400;
+  margin-top: 0.3125rem;
+  margin-bottom: 10px;
+}
+#chefs .box .box-text p {
+  color: var(--color-tertiary);
+  font-size: 0.9375rem;
+  font-style: italic;
 }

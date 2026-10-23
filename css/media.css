@@ -98,3 +98,17 @@
     }
   }
 }
+/* =====================>  Chefs*/
+@media screen and (max-width: 992px) {
+  #chefs .box {
+    width: calc(calc(100% - var(--gap) * 2) / 2);
+  }
+}
+@media screen and (max-width: 769px) {
+  #chefs .box {
+    width: 100%;
+  }
+  #chefs .content {
+    /* --gap: 0; */
+  }
+}
