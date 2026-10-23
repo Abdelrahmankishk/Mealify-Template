@@ -1,0 +1,30 @@
+:root:has(.right input:checked) {
+  --primary-hue: 35;
+  --primary-lightness: 44%;
+  --primary-saturation: 72%;
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 9%;
+  --color-default: #fff;
+  --color-secondary: #fff;
+  --color-tertiary: #9f9f9f;
+  --color-light-grey: #252525;
+}
+
+body:has(.home:target):has(.right input:checked) .home-link::before,
+body:has(.home:target):has(.right input:checked) .home-link,
+body:has(.chefs:target):has(.right input:checked) .chefs-link,
+body:has(.gallery:target):has(.right input:checked) .gallery-link,
+body:has(.contact:target):has(.right input:checked) .contact-link {
+  color: #fff !important;
+}
+#navbar .sections a:hover {
+  color: #fff;
+}
+
+body:has(.right input:checked) #navbar .right .light {
+  display: block;
+}
+body:has(.right input:checked) #navbar .right .dark {
+  display: none;
+}

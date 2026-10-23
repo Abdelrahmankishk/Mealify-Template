@@ -28,20 +28,56 @@
 }
 @media screen and (max-width: 576px) {
 }
+/* =====================>  Navbar*/
+@media screen and (max-width: 1200px) {
+  .menu-icon {
+    display: block;
+  }
+  #navbar .sections .nav-links {
+    transform: translate(110%);
+    position: absolute;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: #fff;
+    width: 350px;
+    height: 100%;
+    right: 0;
+    top: 0px;
+    padding-inline: 10px;
+  }
+  #navbar .sections ul li {
+    text-align: left;
+    margin: 1.25rem 0;
+  }
+
+  #navbar .sections ul .close-icon {
+    display: block;
+    text-align: right;
+  }
+  #navbar .sections ul .close-icon i {
+    font-size: 25px;
+  }
+  #navbar .right {
+    margin-left: 0.625rem;
+    margin-left: auto;
+    padding-top: 3px;
+    padding-right: 5px;
+  }
+}
 
 /* =====================>  Header*/
 @media screen and (min-width: 1200px) {
-  .container {
-    min-width: 100vh;
+  #home {
+    min-height: 100vh;
   }
 }
 @media screen and (max-width: 976px) {
-  #Home .content {
+  #home .content {
     flex-direction: column;
     justify-content: center;
     gap: 50px;
   }
-  #Home .content .left {
+  #home .content .left {
     width: 100%;
     text-align: center;
     display: flex;
@@ -49,15 +85,15 @@
     align-items: center;
     flex-direction: column;
   }
-  #Home .content .right {
+  #home .content .right {
     width: 100%;
   }
 
-  #Home .btn-main {
+  #home .btn-main {
     --border-radius: 100vh;
   }
   @media screen and (max-width: 400px) {
-    #Home .content .left .buttons {
+    #home .content .left .buttons {
       flex-direction: column;
     }
   }
