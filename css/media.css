@@ -1,33 +1,21 @@
-/*greater than 1400 */
+/* ===========> Container */
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
-  #NavBar .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #NavBar .sections ul {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
-/*less the 1400*/
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 1140px;
   }
 }
 
-/*less than 1200*/
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
 }
-/*less than 992*/
 @media screen and (max-width: 992px) {
   .container {
     max-width: 720px;
@@ -37,7 +25,40 @@
   .container {
     max-width: 540px;
   }
-  /* NavBar */
 }
 @media screen and (max-width: 576px) {
+}
+
+/* =====================>  Header*/
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 100vh;
+  }
+}
+@media screen and (max-width: 976px) {
+  #Home .content {
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  #Home .content .left {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #Home .content .right {
+    width: 100%;
+  }
+
+  #Home .btn-main {
+    --border-radius: 100vh;
+  }
+  @media screen and (max-width: 400px) {
+    #Home .content .left .buttons {
+      flex-direction: column;
+    }
+  }
 }
