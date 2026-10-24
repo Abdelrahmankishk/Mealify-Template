@@ -29,6 +29,3 @@ body:has(.right input:checked) #navbar .right .light {
 body:has(.right input:checked) #navbar .right .dark {
   display: none;
 }
-#chefs {
-  /* background-color: #202020; */
-}

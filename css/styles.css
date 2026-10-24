@@ -116,6 +116,26 @@ img {
   );
   --hover-color: var(--color-light);
 }
+.Section-first {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  font-family: var(--font-secondary);
+  color: var(--color-tertiary);
+}
+.Section-title {
+  font-size: 3.125rem;
+  line-height: 3.9375rem;
+  font-weight: 400;
+  color: var(--color-default);
+  font-family: var(--font-primary);
+}
+.Section-title-span {
+  color: var(--color-primary);
+  font-size: 3.125rem;
+  line-height: 3.9375rem;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
 /*===============>  NabBar */
 #navbar {
   position: fixed;
@@ -229,9 +249,6 @@ body:has(.contact:target) .contact-link::before {
 .menu-icon {
   font-size: 26px;
   display: none;
-}
-.menu-icon i {
-  /* font-size: 25px; */
 }
 #navbar .sections ul .close-icon {
   display: none;
@@ -371,26 +388,6 @@ body:has(.contact:target) .contact-link::before {
   text-align: center;
 }
 
-#chefs .text span {
-  font-size: 0.875rem;
-  line-height: 1.0625rem;
-  font-family: var(--font-secondary);
-  color: var(--color-tertiary);
-}
-#chefs .text h1 {
-  font-size: 3.125rem;
-  line-height: 3.9375rem;
-  font-weight: 400;
-  color: var(--color-tertiary);
-  font-family: var(--font-primary);
-}
-#chefs .text .head-color {
-  color: var(--color-primary);
-  font-size: 3.125rem;
-  line-height: 3.9375rem;
-  font-weight: 400;
-  font-family: var(--font-primary);
-}
 #chefs .content {
   display: flex;
   flex-direction: row;
@@ -454,7 +451,6 @@ body:has(.contact:target) .contact-link::before {
 
 #chefs .box .image .overlay a {
   margin-right: 5px;
-  /*  */
 }
 
 #chefs .box .image .overlay i {
@@ -488,4 +484,142 @@ body:has(.contact:target) .contact-link::before {
   color: var(--color-tertiary);
   font-size: 0.9375rem;
   font-style: italic;
+}
+
+/* Gallery */
+#gallery {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  text-align: center;
+  background-color: var(--color-light-grey);
+}
+#gallery .heading {
+  margin-bottom: 1.5625rem;
+}
+#gallery .gallery-photos {
+  height: 1145px;
+  --gap: 1.25rem;
+  gap: var(--gap);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* overlay */
+#gallery .gallery-photos .overlay {
+  background-color: brown;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.9375rem;
+  gap: 5px;
+  background-color: #00000096;
+  color: #fff;
+  transform: translateY(110%);
+  transition: transform var(--animation-duration);
+}
+#gallery .pizza:hover .overlay {
+  transform: translateY(0);
+}
+/* Image */
+#gallery .gallery-photos .image img {
+  width: 100%;
+  transition: scale var(--animation-duration);
+}
+#gallery .pizza:hover img {
+  scale: 1.1;
+}
+/* Pizza */
+#gallery .gallery-photos .pizza {
+  border: 4px solid #fff;
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery .gallery-photos .overlay h2 {
+  font-family: var(--font-secondary);
+}
+/* Pizza-Slices */
+#gallery .gallery-photos .pizza-slices {
+  border: 4px solid #fff;
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position: relative;
+  overflow: hidden;
+}
+#gallery .pizza-slices:hover .overlay {
+  transform: translateY(0);
+}
+#gallery .pizza-slices:hover img {
+  scale: 1.1;
+}
+/* Steak */
+#gallery .gallery-photos .steak {
+  border: 4px solid #fff;
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position: relative;
+  overflow: hidden;
+}
+#gallery .steak:hover .overlay {
+  transform: translateY(0);
+}
+#gallery .steak:hover img {
+  scale: 1.1;
+}
+/* Frittata */
+#gallery .gallery-photos .Frittata {
+  border: 4px solid #fff;
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position: relative;
+  overflow: hidden;
+}
+#gallery .Frittata:hover .overlay {
+  transform: translateY(0);
+}
+#gallery .Frittata:hover img {
+  scale: 1.1;
+}
+/* Burger */
+#gallery .gallery-photos .burger {
+  border: 4px solid #fff;
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position: relative;
+  overflow: hidden;
+}
+#gallery .burger:hover .overlay {
+  transform: translateY(0);
+}
+#gallery .burger:hover img {
+  scale: 1.1;
+}
+/* fried */
+#gallery .gallery-photos .fried {
+  border: 4px solid #fff;
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position: relative;
+  overflow: hidden;
+}
+#gallery .fried:hover .overlay {
+  transform: translateY(0);
+}
+#gallery .fried:hover img {
+  scale: 1.1;
+}
+/* kebab */
+#gallery .gallery-photos .kebab {
+  border: 4px solid #fff;
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position: relative;
+  overflow: hidden;
+}
+#gallery .kebab:hover .overlay {
+  transform: translateY(0);
+}
+#gallery .kebab:hover img {
+  scale: 1.1;
 }

@@ -108,7 +108,76 @@
   #chefs .box {
     width: 100%;
   }
-  #chefs .content {
-    /* --gap: 0; */
+}
+
+/* =====================>  Gallery*/
+@media screen and (max-width: 1400px) {
+  #gallery .gallery-photos {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #gallery .gallery-photos {
+    height: 850px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #gallery .gallery-photos {
+    height: 1404px;
+  }
+  #gallery .gallery-photos .pizza {
+    order: 1;
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+  #gallery .gallery-photos .pizza-slices {
+    order: 3;
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+  #gallery .gallery-photos .steak {
+    order: 5;
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+  #gallery .gallery-photos .Frittata {
+    order: 4;
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+  #gallery .gallery-photos .burger {
+    order: 2;
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+  #gallery .gallery-photos .fried {
+    order: 6;
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+  #gallery .gallery-photos .kebab {
+    order: 7;
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+}
+@media screen and (max-width: 768px) {
+  #gallery .gallery-photos {
+    height: auto;
+    flex-direction: row;
+  }
+  #gallery .gallery-photos .pizza {
+    width: 100%;
+  }
+  #gallery .gallery-photos .pizza-slices {
+    width: 100%;
+  }
+  #gallery .gallery-photos .steak {
+    width: 100%;
+  }
+  #gallery .gallery-photos .Frittata {
+    width: 100%;
+  }
+  #gallery .gallery-photos .burger {
+    width: 100%;
+  }
+  #gallery .gallery-photos .fried {
+    width: 100%;
+  }
+  #gallery .gallery-photos .kebab {
+    width: 100%;
   }
 }
