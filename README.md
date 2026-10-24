@@ -10,7 +10,7 @@ A modern restaurant landing page built with **pure HTML5 and CSS3**, inspired by
 
 ![Mealify Website Homepage](img/Screenshot.png)
 
-![Mealify Website in Dark Mode](img/Darkmode-Screenshof.png.png)
+![Mealify Website in Dark Mode](img/Darkmode-Screenshof.png)
 
 ## 📋 Overview
 
