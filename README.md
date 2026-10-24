@@ -10,6 +10,8 @@ A modern restaurant landing page built with **pure HTML5 and CSS3**, inspired by
 
 ![Mealify Website Homepage](img/Screenshot.png)
 
+![Mealify Website in Dark Mode](img/Darkmode-Screenshof.png.png)
+
 ## 📋 Overview
 
 Mealify is a restaurant website template that presents a restaurant's identity, professional chefs, food gallery, contact information, and social media presence through a visually engaging, single-page layout.
@@ -31,13 +33,13 @@ The implementation focuses on translating the reference design into a responsive
 
 ## 🛠️ Technologies & Tools
 
-| Technology | Application |
-|---|---|
-| HTML5 | Page structure and content |
-| CSS3 | Styling, animations, transitions, and visual effects |
-| Google Fonts | Open Sans, Inter, and Amatic SC typography |
-| Font Awesome Free | Icons and visual elements |
-| GitHub Pages | Website hosting and deployment |
+| Technology        | Application                                          |
+| ----------------- | ---------------------------------------------------- |
+| HTML5             | Page structure and content                           |
+| CSS3              | Styling, animations, transitions, and visual effects |
+| Google Fonts      | Open Sans, Inter, and Amatic SC typography           |
+| Font Awesome Free | Icons and visual elements                            |
+| GitHub Pages      | Website hosting and deployment                       |
 
 **Implementation note:** The website is built entirely with HTML and CSS. No JavaScript libraries, JavaScript code, or CSS frameworks are used.
 
@@ -99,6 +101,7 @@ Mealify-Template/
 │   └── metal-background.jpg
 └── webfonts/
 ```
+
 ## 🎨 Design Reference
 
 [**View the Original Mealify Template**](https://mealify-teal.vercel.app/)
