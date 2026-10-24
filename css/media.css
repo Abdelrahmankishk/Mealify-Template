@@ -28,7 +28,7 @@
 }
 @media screen and (max-width: 576px) {
 }
-/* =====================>  Navbar*/
+/* *=====================>  Navbar*/
 @media screen and (max-width: 1200px) {
   .menu-icon {
     display: block;
@@ -68,7 +68,7 @@
   }
 }
 
-/* =====================>  Header*/
+/** =====================>  Header*/
 @media screen and (min-width: 1200px) {
   #home {
     min-height: 100vh;
@@ -101,7 +101,7 @@
     }
   }
 }
-/* =====================>  Chefs*/
+/** =====================>  Chefs*/
 @media screen and (max-width: 992px) {
   #chefs .box {
     width: calc(calc(100% - var(--gap) * 2) / 2);
@@ -119,7 +119,7 @@
   }
 }
 
-/* =====================>  Gallery*/
+/** =====================>  Gallery*/
 @media screen and (max-width: 1400px) {
   #gallery .gallery-photos {
     height: 1000px;

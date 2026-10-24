@@ -1,5 +1,5 @@
 :root {
-  /* ? ######## Colors */
+  /* ? ============> Colors */
   --color-default: #212529;
   --dot-color: #ce1212;
   --primary-hue: 0;
@@ -24,7 +24,7 @@
   );
   --color-light-grey: #eee;
 
-  /* ! ######## Fonts */
+  /* ! ============> Fonts */
   --font-default:
     "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
@@ -32,7 +32,7 @@
   --font-primary: "Amatic SC", sans-serif;
   --font-secondary: "Inter", sans-serif;
 
-  /* * ######## Animation options */
+  /* ? ============> Animation options */
   --animation-duration: 400ms;
 }
 *,
@@ -151,7 +151,7 @@ body:has(.nav-links:target) #navbar {
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.7);
 }
-/* content */
+/*? content */
 #navbar .content {
   text-align: center;
   display: flex;
@@ -162,7 +162,7 @@ body:has(.nav-links:target) #navbar {
   color: var(--color-primary);
 }
 
-/* left */
+/*? left */
 #navbar .left {
   margin-bottom: 0.625rem;
 }
@@ -180,7 +180,7 @@ body:has(.nav-links:target) #navbar {
 #navbar .sections .nav-links:target {
   transform: translate(0);
 }
-/* sections */
+/*? sections */
 
 #navbar .sections ul {
   display: flex;
@@ -217,7 +217,7 @@ body:has(.nav-links:target) #navbar {
   width: 100%;
 }
 
-/* right */
+/*? right */
 #navbar .right {
   margin-left: 0.625rem;
 }
@@ -261,7 +261,7 @@ body:has(.contact:target) .contact-link::before {
   justify-content: center;
   align-items: center;
 }
-/* content */
+/*? content */
 #home .content {
   display: flex;
   flex-direction: row-reverse;
@@ -270,7 +270,7 @@ body:has(.contact:target) .contact-link::before {
   align-items: center;
   margin-top: 5.9375rem;
 }
-/* left */
+/*? left */
 #home .content .left {
   text-align: left;
   width: 42%;
@@ -330,7 +330,7 @@ body:has(.contact:target) .contact-link::before {
 #home .video-btn .icon i {
   z-index: 1;
 }
-/* right */
+/*? right */
 #home .content .right {
   width: 40%;
 }
@@ -487,7 +487,7 @@ body:has(.contact:target) .contact-link::before {
   font-style: italic;
 }
 
-/* Gallery */
+/**===============>  Gallery */
 #gallery {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
@@ -506,7 +506,7 @@ body:has(.contact:target) .contact-link::before {
   flex-wrap: wrap;
 }
 
-/* overlay */
+/*? overlay */
 #gallery .gallery-photos .overlay {
   background-color: brown;
   position: absolute;
@@ -527,7 +527,7 @@ body:has(.contact:target) .contact-link::before {
 #gallery .pizza:hover .overlay {
   transform: translateY(0);
 }
-/* Image */
+/*? Image */
 #gallery .gallery-photos .image img {
   width: 100%;
   transition: scale var(--animation-duration);
@@ -535,7 +535,7 @@ body:has(.contact:target) .contact-link::before {
 #gallery .pizza:hover img {
   scale: 1.1;
 }
-/* Pizza */
+/*? Pizza */
 #gallery .gallery-photos .pizza {
   border: 4px solid #fff;
   width: calc(calc(100% - var(--gap) * 2) / 3);
@@ -546,7 +546,7 @@ body:has(.contact:target) .contact-link::before {
 #gallery .gallery-photos .overlay h2 {
   font-family: var(--font-secondary);
 }
-/* Pizza-Slices */
+/*? Pizza-Slices */
 #gallery .gallery-photos .pizza-slices {
   border: 4px solid #fff;
   width: calc(calc(100% - var(--gap) * 2) / 3);
@@ -559,7 +559,7 @@ body:has(.contact:target) .contact-link::before {
 #gallery .pizza-slices:hover img {
   scale: 1.1;
 }
-/* Steak */
+/*? Steak */
 #gallery .gallery-photos .steak {
   border: 4px solid #fff;
   width: calc(calc(100% - var(--gap) * 2) / 3);
@@ -572,7 +572,7 @@ body:has(.contact:target) .contact-link::before {
 #gallery .steak:hover img {
   scale: 1.1;
 }
-/* Frittata */
+/*? Frittata */
 #gallery .gallery-photos .Frittata {
   border: 4px solid #fff;
   width: calc(calc(100% - var(--gap) * 2) / 3);
@@ -585,7 +585,7 @@ body:has(.contact:target) .contact-link::before {
 #gallery .Frittata:hover img {
   scale: 1.1;
 }
-/* Burger */
+/*? Burger */
 #gallery .gallery-photos .burger {
   border: 4px solid #fff;
   width: calc(calc(100% - var(--gap) * 2) / 3);
@@ -598,7 +598,7 @@ body:has(.contact:target) .contact-link::before {
 #gallery .burger:hover img {
   scale: 1.1;
 }
-/* fried */
+/*? fried */
 #gallery .gallery-photos .fried {
   border: 4px solid #fff;
   width: calc(calc(100% - var(--gap) * 2) / 3);
@@ -611,7 +611,7 @@ body:has(.contact:target) .contact-link::before {
 #gallery .fried:hover img {
   scale: 1.1;
 }
-/* kebab */
+/*? kebab */
 #gallery .gallery-photos .kebab {
   border: 4px solid #fff;
   width: calc(calc(100% - var(--gap) * 2) / 3);
