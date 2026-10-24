@@ -41,7 +41,6 @@ The implementation focuses on translating the reference design into a responsive
 | Font Awesome Free | Icons and visual elements                            |
 | GitHub Pages      | Website hosting and deployment                       |
 
-**Implementation note:** The website is built entirely with HTML and CSS. No JavaScript libraries, JavaScript code, or CSS frameworks are used.
 
 ## 💡 Notable CSS Implementations
 
