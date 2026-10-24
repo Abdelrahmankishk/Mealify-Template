@@ -829,6 +829,7 @@ body:has(.contact:target) .contact-link::before {
 }
 #footer .content .center p {
   margin: 0.625rem 0;
+  font-size: 1rem;
 }
 #footer .content .center .input {
   display: flex;
@@ -895,6 +896,7 @@ body:has(.contact:target) .contact-link::before {
 #footer .content .right ul li i {
   color: var(--color-primary);
   font-size: 22px;
+  margin-right: 10px;
 }
 #footer .content .right ul li {
   font-size: 0.9375rem;
