@@ -45,6 +45,9 @@
     top: 0px;
     padding-inline: 10px;
   }
+  #navbar .sections a:hover::before {
+    width: 0%;
+  }
   #navbar .sections ul li {
     text-align: left;
     margin: 1.25rem 0;
@@ -103,10 +106,16 @@
   #chefs .box {
     width: calc(calc(100% - var(--gap) * 2) / 2);
   }
+  #chefs .content {
+    gap: 0;
+  }
 }
 @media screen and (max-width: 769px) {
   #chefs .box {
     width: 100%;
+  }
+  #chefs .content {
+    gap: 0;
   }
 }
 
@@ -191,5 +200,38 @@
 @media screen and (max-width: 992px) {
   #contact .box input {
     width: 100%;
+  }
+}
+/* *=====================>  Footer  */
+@media screen and (max-width: 1200px) {
+  #footer .content .left {
+    order: 1;
+    width: calc(calc(100% - var(--gap) * 2) / 2);
+  }
+  @media screen and (max-width: 1200px) {
+    #footer .content .center {
+      order: 3;
+      width: 100%;
+    }
+    #footer .content .right {
+      order: 2;
+      width: calc(calc(100% - var(--gap) * 2) / 2);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer .content .left {
+    order: 1;
+    width: 100%;
+  }
+  @media screen and (max-width: 1200px) {
+    #footer .content .center {
+      order: 2;
+      width: 100%;
+    }
+    #footer .content .right {
+      order: 3;
+      width: 100%;
+    }
   }
 }
