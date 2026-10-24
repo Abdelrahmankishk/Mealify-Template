@@ -181,3 +181,15 @@
     width: 100%;
   }
 }
+
+/* *=====================>  Contact */
+@media screen and (max-width: 768px) {
+  #contact .text .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #contact .box input {
+    width: 100%;
+  }
+}
