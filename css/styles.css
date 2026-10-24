@@ -383,8 +383,8 @@ body:has(.contact:target) .contact-link::before {
   background-color: var(--chef-section-color);
 }
 #chefs .container {
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+  padding-top: 5.125rem;
+  padding-bottom: 5.125rem;
   text-align: center;
 }
 
@@ -489,8 +489,8 @@ body:has(.contact:target) .contact-link::before {
 
 /**===============>  Gallery */
 #gallery {
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+  padding-top: 5.125rem;
+  padding-bottom: 5.125rem;
   text-align: center;
   background-color: var(--color-light-grey);
 }
@@ -628,8 +628,8 @@ body:has(.contact:target) .contact-link::before {
 /**===============>  Contact */
 #contact {
   background-color: var(--chef-section-color);
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+  padding-top: 5.125rem;
+  padding-bottom: 5.125rem;
 }
 /* !heading */
 #contact .heading {
@@ -896,7 +896,7 @@ body:has(.contact:target) .contact-link::before {
 #footer .content .right ul li i {
   color: var(--color-primary);
   font-size: 22px;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 #footer .content .right ul li {
   font-size: 0.9375rem;
